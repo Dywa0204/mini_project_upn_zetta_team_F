@@ -1,8 +1,17 @@
-<header>
+<mat-toolbar color="primary">
   <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/menu">Menu</a>
-    <a routerLink="/cart">Cart</a>
+    <a routerLink="/">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a routerLink="/menu">
+      <mat-icon>restaurant_menu</mat-icon>
+      <span>Menu</span>
+    </a>
+    <a routerLink="/cart">
+      <mat-icon>shopping_cart</mat-icon>
+      <span>Cart</span>
+    </a>
   </nav>
-</header>
+</mat-toolbar>
 <router-outlet></router-outlet>
