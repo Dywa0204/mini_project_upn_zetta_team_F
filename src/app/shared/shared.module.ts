@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button'
   declarations: [],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule 
   ],
   exports: [
     MatToolbarModule,
