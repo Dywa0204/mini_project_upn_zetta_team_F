@@ -1,1 +1,21 @@
-<p>loginpage works!</p>
+<div class="bg" [ngStyle]="{'backgroundImage' : getBackgroundImage()}">
+    <mat-card>
+        <form>
+            <h1>LOGIN</h1>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="username" required type="email">
+                <!-- <mat-error *ngIf="userForm.controls['username'].errors">This field cannot be empty</mat-error> -->
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" type="password" required>
+                <!-- <mat-error *ngIf="userForm.controls['password'].errors">This field cannot be empty</mat-error> -->
+            </mat-form-field>
+    
+            <button mat-flat-button color="primary" type="submit">LOGIN</button>
+        </form>
+    </mat-card>
+</div>
