@@ -22,4 +22,8 @@ export class LoginpageComponent implements OnInit {
   getBackgroundImage() { 
     return `url(${this.myBackgroundImageUrl})` 
   } 
+
+  onSubmit(){
+    
+  }
 }

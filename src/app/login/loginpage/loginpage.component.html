@@ -1,6 +1,6 @@
 <div class="bg" [ngStyle]="{'backgroundImage' : getBackgroundImage()}">
     <mat-card>
-        <form [formGroup]="formLogin">
+        <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
             <h1>LOGIN</h1>
     
             <mat-form-field appearance="fill">
